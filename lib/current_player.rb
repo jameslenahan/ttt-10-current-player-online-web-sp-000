@@ -2,14 +2,14 @@ def turn_cout(board)
   counter = 0
   board.each do |space|
     if space == "X" || space = "0"
-      turns += 1 
+      counter += 1 
     end
   end
   return turns
 end
 
 def current_player(board)
-  turns = turn_count(board)
+  counter = turn_count(board)
   if turns % 2 == 0 
     return "X"
   else
