@@ -2,10 +2,10 @@ def turn_count(board)
   counter = 0
   board.each do |space|
     if space == "X" || space = "0"
-      counter += 1 
+      counter.push(1)
     end
   end
-  return counter
+  counter.length.to_i
 end
 
 def current_player(board)
