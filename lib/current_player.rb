@@ -3,6 +3,8 @@ def turn_count(board)
   board.each do |space|
     if space == "X" || space == "O"
       turns += log10end
+    end
+  end
   return turns
 end
   
